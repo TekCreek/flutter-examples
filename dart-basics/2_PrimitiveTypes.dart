@@ -1,15 +1,10 @@
 /**
- * Numbers (int, double) - num can be either int or double
- * String
- * bool 
- * Records  - (value1, value2)
- * Function
- * List 
- * Set
- * Map
- * 
- * const - constants can not be modified after initialization
- * 
+ * Primitive types - 
+ *  Numbers (int, double) - num can be either int or double
+ *  String
+ *  bool 
+ *  ...
+ *  const - constants can not be modified after initialization
  */
 void main() {
   int a = 1;
@@ -60,4 +55,12 @@ multi-line strings like this one.
 
   bool flag = true; // can be either true of false
   print(flag);
+
+  var x = 10; // type determined using value is int and it is fixed.
+  // x = 20.2; // ERROR: cannot assign double value to a variable of type int.
+
+  dynamic y = 10; // y is int
+  print(y.runtimeType); // int
+  y = 20.2; // type is changed to double
+  print(y.runtimeType); // double
 }
