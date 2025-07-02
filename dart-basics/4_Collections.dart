@@ -46,7 +46,24 @@ void main() {
   }
 
   // spread operator
-  var list1 = {1, 2, 3, 4};
-  var list2 = {...list1, 5, 6, 7};
+  var list1 = [1, 2, 3, 4];
+  var list2 = [...list1, 5, 6, 7];
   print(list2);
+
+  // if .. for during spread operation
+  var n = 2;
+  var words = [
+    if (n == 1) 'one',
+    if (n > 1) 'greater than 1' else ' lessthan or equal to 1',
+    if (n case int i) 'It is an integer with value $i',
+  ];
+  print(words);
+
+  // for
+  var z = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  var onlyEven = [
+    for (var v in z)
+      if (v.isEven) v,
+  ];
+  print(onlyEven);
 }
