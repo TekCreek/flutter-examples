@@ -39,6 +39,15 @@ void main() {
 
   int t = myAnonAddWithArrow(10, 20);
   print("value of t is $t");
+
+  // Optional to understand the below one.
+  var add1 = (a, b, c) => a + b + c; // parameters are dynamic
+  print(add1(10, 20, 30));
+  print(add1('abc', 'xyz', 'pqr'));
+  // print(add1(true, false, false)); // ERROR boolean doesn't support + operation
+  print(add1([1], [2], [1, 3, 4]));
+  // print(add1({1}, {2}, {1, 3, 4})); // ERROR: set doesn't support + operation
+  // print(add1({'a': 1}, {'b': 2}, {'c': 3})); // ERROR: Map doesn't support + operation
 }
 
 /**
