@@ -19,7 +19,7 @@ void main() {
   var items = [
     1,
     ?absentValue,
-    ?presentValue,
+    presentValue,
     absentValue,
     5,
   ]; // [1, 3, null, 5]
