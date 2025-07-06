@@ -10,7 +10,7 @@ class Contacts {
   // here names is exposed as a property
   List<String> get names => [..._names];
 
-  set names(List<String> names) => _names = names;
+  set names(List<String> names) => _names = [...names];
 
   void display() {
     print(_names);

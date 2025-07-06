@@ -1,4 +1,4 @@
-import 'Contacts.dart';
+import 'mypackage/Contacts.dart';
 
 void main() {
   Contacts contacts = Contacts();
