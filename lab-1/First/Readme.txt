@@ -1,1 +1,1 @@
-1.a) Instart flutter and dart SDK
+1.a) Install flutter and dart SDK
