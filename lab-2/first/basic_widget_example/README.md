@@ -1,16 +1,22 @@
 # basic_widget_example
 
-A new Flutter project.
+First create a new flutter project using the following command 
 
-## Getting Started
+```
+    flutter create basic_widget_example 
+```
 
-This project is a starting point for a Flutter application.
+You will see the standard folder structure created for you with simple or blank content. 
+Now copy the lib\main.dart file from this folder and replace the lib\main.dart file in the
+generated project.
 
-A few resources to get you started if this is your first Flutter project:
+Now you can launch the emulator 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+``` 
+=> Applicable for VS Code - 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    ctrl + shift + p
+    Flutter: Launch Emulator 
+       choose the device on which you want to run, if you are not sure you can leave this step and 
+       run on chrome with out choosing the emulator.
+```
