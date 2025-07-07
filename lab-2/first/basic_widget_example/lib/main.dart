@@ -14,7 +14,7 @@ void main() {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Hello, Flutter!', style: TextStyle(fontSize: 18.0)),
+            const Text('Hello, Flutter!'),
             const Text(
               'Styled Text',
               style: TextStyle(
