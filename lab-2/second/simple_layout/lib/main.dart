@@ -17,12 +17,29 @@ class MyApp extends StatelessWidget {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [Text('1'), Text('2'), Text('3')],
+              children: [
+                ElevatedButton(onPressed: () {}, child: Text('1')),
+                ElevatedButton(onPressed: () {}, child: Text('2')),
+                ElevatedButton(onPressed: () {}, child: Text('3')),
+              ],
             ),
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [Text('4'), Text('5'), Text('6')],
+              children: [
+                OutlinedButton(onPressed: () {}, child: Text('4')),
+                OutlinedButton(onPressed: () {}, child: Text('5')),
+                OutlinedButton(onPressed: () {}, child: Text('6')),
+              ],
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                TextButton(onPressed: () {}, child: Text('7')),
+                TextButton(onPressed: () {}, child: Text('8')),
+                TextButton(onPressed: () {}, child: Text('9')),
+              ],
             ),
           ],
         ),
