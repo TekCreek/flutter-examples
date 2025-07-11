@@ -28,11 +28,11 @@ Replace the lib\main.dart with the one from this lib folder.
         flutter run
     ```
 
-   or launch the emulator and run the application in the emulator.
-   Note - Applicable for VS Code 
+   Emulator - launch the emulator and run the application in the emulator.
+   Note - Applicable for VS Code, as a pre-requisite you need to 
+   first create a virtual device through android virtual device manager.
    ``` 
         ctrl + shift + p
         Flutter: Launch Emulator 
-
-        choose the device on which you want to run, if you are not sure you can leave this step and 
+        choose the device you created using AVD.
    ```
