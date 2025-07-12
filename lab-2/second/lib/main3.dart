@@ -23,3 +23,12 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+/**
+ * Stack widget you can overlap widgets and freely position them on the 
+ * screen using Positioned. Eg.
+  
+   Stack(
+      children: const [Positioned(top: 140, left: 165, child: Text("Hello"))],
+   )
+ */

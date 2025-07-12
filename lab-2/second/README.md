@@ -10,6 +10,7 @@
 
 Replace the content of lib\main.dart with the one from this lib folder one at a time.
 
+Note - This is an optional step you can directly use `flutter run` command.
 3. You can use flutter build to build the project 
 
     Use the below command for android project.
