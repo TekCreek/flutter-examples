@@ -1,4 +1,4 @@
-# basic_widget_example
+# Row, Column and Stack widgets
 
 1. First create a new flutter project using the following command 
 

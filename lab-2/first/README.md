@@ -1,4 +1,4 @@
-# basic_widget_example
+# Basic Widgets Text, Image, Container
 
 1. First create a new flutter project using the following command 
 
