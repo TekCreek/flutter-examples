@@ -2,7 +2,6 @@
 
 ```
     flutter create lab_5b
-
     cd lab_5b
             In the generated folder structure replace the content of lib/main.dart with the one given in this folder 
  

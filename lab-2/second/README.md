@@ -4,6 +4,7 @@
 
     ```
         flutter create lab_2b 
+        cd lab_2b
     ```
 
 2. You will see the standard folder structure and basic files created for you.

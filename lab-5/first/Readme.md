@@ -1,5 +1,14 @@
 # Stateless and Stateful widgets
 
+## Execution steps
+```
+        flutter create lab_5a2
+        cd lab_5a2
+            In the generated folder structure replace the content of lib/main.dart with the one given in this folder 
+        flutter run 
+            choose chrome  
+```
+
 ## Stateless widget 
 Use this kind of widget when you need to create a piece of UI that is not going to change over the time.
 
