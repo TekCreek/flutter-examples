@@ -1,4 +1,6 @@
-# Basic Widgets Text, Image, Container
+# 2.a) Explore various Flutter widgets (Text, Image, Container, etc.).
+
+## Basic Widgets Text, Image, Container
 
 1. First create a new flutter project using the following command 
 

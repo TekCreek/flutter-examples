@@ -1,5 +1,5 @@
-# Responsive UI 
-
+# 3.a) Design a responsive UI that adapts to different screen sizes.
+## Responsive UI 
 
 1. First create a new flutter project using the following command 
 

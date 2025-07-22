@@ -1,4 +1,5 @@
-# MediaQuery 
+# 3.b) Implement media queries and breakpoints for responsiveness.
+## MediaQuery 
 
 
 1. First create a new flutter project using the following command 

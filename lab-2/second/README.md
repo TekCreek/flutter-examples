@@ -1,4 +1,5 @@
-# Row, Column and Stack widgets
+# 2.b) Implement different layout structures using Row, Column, and Stack widgets.
+## Row, Column and Stack widgets
 
 1. First create a new flutter project using the following command 
 
