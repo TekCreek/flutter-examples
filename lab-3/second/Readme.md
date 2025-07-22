@@ -40,9 +40,9 @@
         choose the device you created using AVD.
    ```
 
-   ## Notes 
+## Notes 
 
-   The MediaQuery class is a sort of more powerful version of LayoutBuilder because it’s alwaysavailable and it gives you more control over various settings of the screen. It just requires a context:
+The MediaQuery class is a sort of more powerful version of LayoutBuilder because it’s alwaysavailable and it gives you more control over various settings of the screen. It just requires a context:
 
     ```
     @override
@@ -52,8 +52,7 @@
     }
     ```
 
-    With size you also have access to height, padding, distances and much more. 
-    For example, you might want to know which is the current orientation of the device:
+With size you also have access to height, padding, distances and much more. For example, you might want to know what is the current orientation of the device:
 
     ```
         final orientation = MediaQuery.of(context)?.orientation;

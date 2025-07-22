@@ -39,11 +39,11 @@ Replace the lib\main.dart with the one from this lib folder.
         choose the device you created using AVD.
    ```
 
-   ## Notes 
+## Notes 
 
-   Responsive apps automatically adapt to the size of the screen by rearranging the UI elements inorder to properly fill all the available space.
+Responsive apps automatically adapt to the size of the screen by rearranging the UI elements inorder to properly fill all the available space.
 
-   Below code is an example of a ListView it is always used in the vertical direction without taking into account the orientation of the screen. This is not a responsive usage at all:
+Below code is an example of a ListView it is always used in the vertical direction without taking into account the orientation of the screen. This is not a responsive usage at all:
 
    ```
         class ItemListPage extends StatelessWidget {
@@ -66,8 +66,7 @@ Replace the lib\main.dart with the one from this lib folder.
         }
    ```
 
-The LayoutBuilder widget gives information about the constraints of the parent such as the width and the height, using this we can rearrange 
-the UI according to the available space, as shown in the example.
+The LayoutBuilder widget gives information about the constraints of the parent such as the width and the height, using this we can rearrange the UI according to the available space, as shown in the example.
 
    ```
         class ItemListPage extends StatelessWidget {
