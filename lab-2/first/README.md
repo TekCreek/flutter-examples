@@ -69,18 +69,19 @@ composition of widgets i.e. nesting of widgets one inside the other. When you ne
 1. main() method is the entry point 
 2. runApp() takes a Widget and makes it a root of the widget tree.
 3. MyApp is the root widget and Column is its child and the other two Text widgets are the children of Column.
-        ```
-                MyApp   <-- root
-                  ^
-                  |
-                Column  <-- child of root MyApp
-                  ^
-                  |
-             ------------
-            |            |
-           Text        Text  <-- children of column
 
-        ```
+```
+        MyApp   <-- root
+          ^
+          |
+        Column  <-- child of root MyApp
+          ^
+          |
+     ------------
+    |            |
+    Text        Text  <-- children of column
+
+```
 
 ## Basic Widgets
 
