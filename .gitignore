@@ -81,6 +81,8 @@ flutter/ephemeral/
 *.user
 *.userosscache
 *.sln.docstates
+*.bkp
+*.drawio
 
 # Visual Studio build-related files.
 x64/
@@ -98,3 +100,4 @@ class-room/3a/
 class-room/3b/
 class-room/3c/
 class-room/3d/
+class-room/3e/
