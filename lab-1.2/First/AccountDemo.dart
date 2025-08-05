@@ -7,6 +7,12 @@ void main() {
   acc1.display();
 
   Account acc2 = Account.open(2, 2000);
-  acc2.withdraw(3000);
+
+  try {
+    acc2.withdraw(3000);
+  } on Exception catch (e) {
+    print("Handled exception $e");
+  }
+
   acc2.display();
 }
