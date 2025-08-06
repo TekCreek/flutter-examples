@@ -17,7 +17,8 @@ void main() {
  which limits the usage to only integer types, the generic search function can be applicable
  for any given type. 
 
- bool search<Type>(List<Type> data, Type searchEle, bool Function(Type, Type) compare) {
+ bool search<Type>(List<Type> data, Type searchEle, 
+                  bool Function(Type, Type) compare) {
   for (var ele in data) {
     if (compare(ele, searchEle)) {
       return true;
