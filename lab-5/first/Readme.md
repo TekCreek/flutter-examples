@@ -14,7 +14,8 @@
 ## Stateless widget 
 Use this kind of widget when you need to create a piece of UI that is not going to change over the time.
 
-```
+```dart
+
     class MyInfo extends StatelessWidget {
         // Notice the constant constructor
         const MyInfo();
@@ -46,7 +47,7 @@ refresh the UI, the build(...) method of State<T> is called.
 2. Subclasses of State<T> gain access to the setState(...) method which rebuilds the
 widget (it’s like a refreshing tool).
 
-```
+```dart
 
 class Counter extends StatefulWidget {
   const Counter({super.key});

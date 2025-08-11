@@ -36,7 +36,8 @@ Here we need a model object to maintain the required state and ChangeNotifier is
 mixin which provides notifyListeners method which signals the interested widgets that
 something had changed and rebuild is required to reflect the change. 
 
-```
+```dart
+
         class CounterModel with ChangeNotifier {
                 int _counter = 0;
 
@@ -57,7 +58,8 @@ something had changed and rebuild is required to reflect the change.
 Now setup the ChangeNotifierProvider at a point where it will be available all the child widgets in 
 the hierarchy through Provider. 
 
-```
+```dart
+
         class MyApp extends StatelessWidget {
                 const MyApp({super.key});
 
@@ -78,7 +80,8 @@ the hierarchy through Provider.
         }
 ```
 
-```
+```dart
+
         class DemoPage extends StatelessWidget {
                 
                 @override

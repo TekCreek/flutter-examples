@@ -45,7 +45,8 @@ Note - This is an optional step you can directly use `flutter run` command.
 
 This widget places one or more children in the horizontal axis with the given space constraints.
 
-   ```
+   ```dart
+
     Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: const [
@@ -53,8 +54,8 @@ This widget places one or more children in the horizontal axis with the given sp
                     Text("two"),
                     Text("three"),
                 ],
-    )  mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
+    )   
+
    ```
 
 And you can place widgets in different ways using mainAxisAlignment property.
@@ -73,11 +74,13 @@ Similar is the case with Column in the coming example.
 
 Column works in the vertical axis. It tries to totally cover the available vertical space; you can make sure that it shrinks to fit the height of its content using 
 
-    ```
+    ```dart
+
      Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center
-     ),
+     )
+
     ```
 Note - MainAxisAlignment values are similar to Row but need to look at it vertically.
 
@@ -85,7 +88,8 @@ Note - MainAxisAlignment values are similar to Row but need to look at it vertic
 
 Thanks to the Stack widget you can overlap widgets and freely position them on the screen using Positioned.
 
-    ```
+    ```dart
+
         Stack(
             children: const [
                         Positioned(
@@ -95,5 +99,6 @@ Thanks to the Stack widget you can overlap widgets and freely position them on t
                         ),
             ]
         )
+        
     ```
 

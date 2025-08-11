@@ -45,18 +45,22 @@
 
 The MediaQuery class is a sort of more powerful version of LayoutBuilder because it’s alwaysavailable and it gives you more control over various settings of the screen. It just requires a context:
 
-    ```
+    ```dart
+
     @override
     Widget build(BuildContext context) {
         final width = MediaQuery.of(context)?.size.width ?? -1;
         return Text("$width");
     }
+
     ```
 
 With size you also have access to height, padding, distances and much more. For example, you might want to know what is the current orientation of the device:
 
-    ```
+    ```dart
+
         final orientation = MediaQuery.of(context)?.orientation;
         // Using a null check rather than providing a default value
         if ((orientation != null) && (orientation == Orientation.portrait)) {...}
+        
     ```

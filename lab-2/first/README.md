@@ -46,7 +46,8 @@ Replace the lib\main.dart with the one from this lib folder.
 In Flutter everything that appears on the screen is called "widget". User interfaces in Flutter is a
 composition of widgets i.e. nesting of widgets one inside the other. When you nest widgets one inside the other you create a hierarchy called "widget tree" in which there are parents and children.
 
-```
+```dart
+
     import 'package:flutter/material.dart';
 
     void main() {
@@ -89,7 +90,8 @@ composition of widgets i.e. nesting of widgets one inside the other. When you ne
 
 Text widget is used to display a piece of text.
 
-    ```
+    ```dart
+
         const Text(
             "Some text here",
             style: TextStyle(
@@ -98,13 +100,15 @@ Text widget is used to display a piece of text.
                         wordSpacing: 4,
                    ),
         );
+
     ```
 
 ### Container 
 
 Equivalent of a <div></div> tag in the HTML world; it’s a general purpose container you can use to customize painting, positioning, sizing etc.
 
-    ```
+    ```dart
+
         Container(
             height: 70,
             width: 160,
@@ -119,6 +123,7 @@ Equivalent of a <div></div> tag in the HTML world; it’s a general purpose cont
                                    )
                     )
         );
+
     ```
 
 ### Image 
@@ -128,23 +133,27 @@ Image widget gives us the ability to load and display the images.
 1. Loading images from assets through pubspec.yaml e.g.
    Note - for this to work first you need to store the asset in the project and declare the asset in the pubspec.yaml
    
-    ```
+    ```dart
+
         @override
         Widget build(BuildContext context) {
             return Center(
                     child: Image.asset("myassets/something.png"),
             );
         }
+
     ```
 2. Loading images from network url e.g.
 
-    ```
+    ```dart
+
         Image.network(
             'https://www.gstatic.com/flutter-onestack-prototype/genui/example_1.jpg',
             width: 150,
             height: 150,
             fit: BoxFit.cover,
         )
+        
     ```
 
 

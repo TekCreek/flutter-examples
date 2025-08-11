@@ -19,7 +19,7 @@ This widget demonstrates how to create reusable UI components in Flutter by:
 * Add custom behaviour.
 Once done, this component can be used as a widget in itself and can be composed as a child for other widgets.
 
-```
+```dart
 
 class Product extends StatelessWidget {
   final String name;
@@ -43,7 +43,8 @@ class Product extends StatelessWidget {
 
 Demo usage - 
 
-```
+```dart
+
     Column(
         children: [
           Product(name: "Computer", icon: Icons.computer, price: 20000),

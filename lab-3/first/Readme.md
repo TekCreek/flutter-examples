@@ -45,7 +45,8 @@ Responsive apps automatically adapt to the size of the screen by rearranging the
 
 Below code is an example of a ListView it is always used in the vertical direction without taking into account the orientation of the screen. This is not a responsive usage at all:
 
-   ```
+   ```dart
+
         class ItemListPage extends StatelessWidget {
             const ItemListPage({super.key});
 
@@ -64,11 +65,13 @@ Below code is an example of a ListView it is always used in the vertical directi
                 );
             }
         }
+
    ```
 
 The LayoutBuilder widget gives information about the constraints of the parent such as the width and the height, using this we can rearrange the UI according to the available space, as shown in the example.
 
-   ```
+   ```dart
+
         class ItemListPage extends StatelessWidget {
             const ItemListPage({super.key});
 
@@ -103,4 +106,5 @@ The LayoutBuilder widget gives information about the constraints of the parent s
         class ListData extends StatelessWidget {.......}
 
         class GridData extends StatelessWidget {.......}
+        
    ```
