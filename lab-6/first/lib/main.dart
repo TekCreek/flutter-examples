@@ -73,12 +73,13 @@ class LaptopProductsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int columns = (MediaQuery.of(context).size.width / 448).floor();
     return Scaffold(
       appBar: AppBar(title: const Text("Laptops on Amazon.in")),
       body: GridView.builder(
         padding: const EdgeInsets.all(8),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2, // 2 columns
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: columns,
           crossAxisSpacing: 8,
           mainAxisSpacing: 8,
           childAspectRatio: 2, // Adjust card height
