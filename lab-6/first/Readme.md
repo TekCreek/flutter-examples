@@ -36,6 +36,7 @@ class Product extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children:[Icon(icon), Text(name), Text("$price")]);
+  }
 }
 
 ```
