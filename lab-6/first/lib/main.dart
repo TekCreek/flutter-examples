@@ -16,11 +16,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
       home: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Product("Computer", Icon(Icons.computer), 20000),
-          SizedBox(height: 20),
-          Product("Keyboard", Icon(Icons.keyboard), 2000),
+          Product(name: "Computer", icon: Icons.computer, price: 20000),
+          Product(name: "Keyboard", icon: Icons.keyboard, price: 2000),
         ],
       ),
     );
@@ -29,28 +27,60 @@ class MyApp extends StatelessWidget {
 
 class Product extends StatelessWidget {
   final String name;
-  final Icon icon;
+  final IconData icon;
   final double price;
 
-  const Product(this.name, this.icon, this.price, {super.key});
+  const Product({
+    required this.name,
+    required this.icon,
+    required this.price,
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      constraints: BoxConstraints.loose(Size(300, 300)),
-      decoration: BoxDecoration(border: Border.all()),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          icon,
-          SizedBox(width: 20),
-          Text(name, style: TextStyle(color: Colors.black, fontSize: 14.0)),
-          SizedBox(width: 20),
-          Text(
-            "Rs: $price",
-            style: TextStyle(color: Colors.deepPurple, fontSize: 14.0),
-          ),
-        ],
+    return Card(
+      elevation: 3,
+      margin: const EdgeInsets.all(8.0),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      child: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: Row(
+          children: [
+            // Icon on the left
+            Container(
+              width: 50,
+              height: 50,
+              decoration: BoxDecoration(
+                color: Colors.blue[50],
+                shape: BoxShape.circle,
+              ),
+              child: Icon(icon, size: 28, color: Colors.blue),
+            ),
+            const SizedBox(width: 16),
+            // Name and Price on the right
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    name,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    "\$${price.toStringAsFixed(2)}",
+                    style: TextStyle(fontSize: 14, color: Colors.grey[700]),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
