@@ -26,6 +26,15 @@
 * *initialRoute*: '/' → starting screen is FirstScreen (usually HomeScreen).
 * *onGenerateRoute*: *RouteGenerator.generateRoute* → all navigation requests are processed by a single function.
 
+```dart
+ MaterialApp(
+      ....
+      ....
+      initialRoute: RouteGenerator.firstScreenRoute,
+      onGenerateRoute: RouteGenerator.generateRoute,
+ );
+```
+
 #### RouteGenerator.generateRoute(RouteSettings settings)
 
 Called automatically when *Navigator.pushNamed()* is used.
@@ -44,6 +53,22 @@ Switches on settings.name:
 * '/' → returns FirstScreen (usually HomeScreen).
 * '/second' → returns SecondScreen.
 * Default → fallback to FirstScreen OR we can implement it to display 404 Page Not Found Error for better debugging.
+
+```dart
+static Route<dynamic> generateRoute(RouteSettings settings) {
+    switch (settings.name) {
+        case "/":
+            return MaterialPageRoute<void>(builder: (_) => const FirstScreen());
+        case "/second":
+            return MaterialPageRoute<void>(builder: (_) => const SecondScreen());
+        default:
+            // Handle unknown routes: navigate to the first screen
+            return MaterialPageRoute<void>(builder: (_) => const FirstScreen());
+    }
+}
+```
+
+MaterialPageRoute responsible for adaptive tansition such as zooms in, fades in or slide in etc. based on platform.
 
 ### Navigation
 
