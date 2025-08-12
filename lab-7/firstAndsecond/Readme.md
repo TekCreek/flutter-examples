@@ -102,7 +102,7 @@ Code Breakdown – Simple Flutter Form
     * On submit, call validate()—if valid, proceed (display a success message, send data, etc.).
     * If not valid, error messages will appear below the respective invalid fields.
 
-4. ScaffoldMessenger.of(context).showSnackBar(message)
+4. ScaffoldMessenger.of(context).showSnackBar(....)
     * Displays the message at the bottom.
 
 
