@@ -40,12 +40,7 @@
 Called automatically when *Navigator.pushNamed()* is used.
 Example - 
 ```dart
-
-Navigator.pushNamed<void>(
-                context,
-                RouteGenerator.secondScreenRoute,
-          );
-
+Navigator.pushNamed<void>(context, "/second");
 ```
 
 Switches on settings.name:
