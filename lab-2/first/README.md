@@ -71,7 +71,9 @@ composition of widgets i.e. nesting of widgets one inside the other. When you ne
 2. runApp() takes a Widget and makes it a root of the widget tree.
 3. MyApp is the root widget and Column is its child and the other two Text widgets are the children of Column.
 
-```
+```State in the first screen (like _counter) is preserved when navigating away and back.
+
+
         MyApp   <-- root
           ^
           |
