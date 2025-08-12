@@ -105,7 +105,7 @@ Text widget is used to display a piece of text.
 
 ### Container 
 
-Equivalent of a <div></div> tag in the HTML world; it’s a general purpose container you can use to customize painting, positioning, sizing etc.
+Equivalent of a div tag in the HTML world; it’s a general purpose container you can use to customize painting, positioning, sizing etc.
 
     ```dart
 
