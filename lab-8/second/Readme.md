@@ -1,0 +1,1 @@
+# 8.b) Experiment with different types of animations (fade, slide, etc.).
