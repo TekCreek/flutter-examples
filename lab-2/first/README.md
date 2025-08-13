@@ -92,41 +92,41 @@ composition of widgets i.e. nesting of widgets one inside the other. When you ne
 
 Text widget is used to display a piece of text.
 
-    ```dart
+```dart
 
-        const Text(
-            "Some text here",
-            style: TextStyle(
-                        color: Colors.amber,
-                        fontSize: 18,
-                        wordSpacing: 4,
-                   ),
-        );
+    const Text(
+        "Some text here",
+        style: TextStyle(
+                    color: Colors.amber,
+                    fontSize: 18,
+                    wordSpacing: 4,
+                ),
+    );
 
-    ```
+```
 
 ### Container 
 
 Equivalent of a div tag in the HTML world; it’s a general purpose container you can use to customize painting, positioning, sizing etc.
 
-    ```dart
+```dart
 
-        Container(
-            height: 70,
-            width: 160,
-            color: Colors.blueGrey,
-            alignment: Alignment.center,
-            transform: Matrix4.rotationZ(-0.25),
-            child: const Text(
-                            "Containers!",
-                            style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 25
-                                   )
-                    )
-        );
+    Container(
+        height: 70,
+        width: 160,
+        color: Colors.blueGrey,
+        alignment: Alignment.center,
+        transform: Matrix4.rotationZ(-0.25),
+        child: const Text(
+                        "Containers!",
+                        style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25
+                                )
+                )
+    );
 
-    ```
+```
 
 ### Image 
 
@@ -135,27 +135,26 @@ Image widget gives us the ability to load and display the images.
 1. Loading images from assets through pubspec.yaml e.g.
    Note - for this to work first you need to store the asset in the project and declare the asset in the pubspec.yaml
    
-    ```dart
+```dart
 
-        @override
-        Widget build(BuildContext context) {
-            return Center(
-                    child: Image.asset("myassets/something.png"),
-            );
-        }
+    @override
+    Widget build(BuildContext context) {
+        return Center(
+                child: Image.asset("myassets/something.png"),
+        );
+    }
 
-    ```
+```
 2. Loading images from network url e.g.
 
-    ```dart
+```dart
 
-        Image.network(
-            'https://www.gstatic.com/flutter-onestack-prototype/genui/example_1.jpg',
-            width: 150,
-            height: 150,
-            fit: BoxFit.cover,
-        )
-        
-    ```
-
+    Image.network(
+        'https://www.gstatic.com/flutter-onestack-prototype/genui/example_1.jpg',
+        width: 150,
+        height: 150,
+        fit: BoxFit.cover,
+    )
+    
+```
 
