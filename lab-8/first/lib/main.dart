@@ -17,8 +17,11 @@ class AnimationDemo extends StatefulWidget {
 
 class _AnimationDemoState extends State<AnimationDemo> {
   double _fontSize = 100;
+  Color _fontColor = Colors.blue;
+
   double _boxSize = 100;
   Color _boxColor = Colors.blue;
+
   BorderRadiusGeometry _borderRadius = BorderRadiusGeometry.circular(25);
 
   final random = Random();
@@ -33,6 +36,7 @@ class _AnimationDemoState extends State<AnimationDemo> {
         random.nextInt(256),
         random.nextDouble(),
       );
+      _fontColor = _boxColor;
       _borderRadius = BorderRadiusGeometry.circular(
         random.nextInt(25).toDouble(),
       );
@@ -62,7 +66,7 @@ class _AnimationDemoState extends State<AnimationDemo> {
               curve: Curves.linear,
               style: TextStyle(
                 fontSize: _fontSize,
-                color: _boxColor,
+                color: _fontColor,
                 fontWeight: FontWeight.bold,
               ),
               child: const Text("Flutter Rocks!"),

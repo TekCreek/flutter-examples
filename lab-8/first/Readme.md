@@ -3,8 +3,8 @@
 ## Execution steps
 
 ```
-flutter create lab7
-cd lab7
+flutter create lab8a
+cd lab8a
     In the generated folder structure replace the content of lib/main.dart with the one given in this folder 
 flutter run 
     choose chrome  
@@ -52,11 +52,12 @@ AnimatedDefaultTextStyle(
     curve: Curves.linear,
     style: TextStyle(
         fontSize: _fontSize,
-        color: _boxColor,
+        color: _fontColor,
         fontWeight: FontWeight.bold,
     ),
     child: const Text("Flutter Rocks!"),
 )
 ```
+**Note:**  Changes to the variables *_fontSize*, *_fontColor* will animate the change for the duration of 600 milliseconds. 
 
 
