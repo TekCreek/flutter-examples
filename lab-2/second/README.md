@@ -77,8 +77,8 @@ Column works in the vertical axis. It tries to totally cover the available verti
 ```dart
 
     Column(
-    mainAxisSize: MainAxisSize.min,
-    mainAxisAlignment: MainAxisAlignment.center
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center
     )
 
 ```

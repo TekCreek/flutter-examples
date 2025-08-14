@@ -39,6 +39,7 @@
 
 Called automatically when *Navigator.pushNamed()* is used.
 Example - 
+
 ```dart
 Navigator.pushNamed<void>(context, "/second");
 ```
@@ -50,6 +51,7 @@ Switches on settings.name:
 * Default → fallback to FirstScreen OR we can implement it to display 404 Page Not Found Error for better debugging.
 
 ```dart
+
 static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
         case "/":
@@ -61,6 +63,7 @@ static Route<dynamic> generateRoute(RouteSettings settings) {
             return MaterialPageRoute<void>(builder: (_) => const FirstScreen());
     }
 }
+
 ```
 
 MaterialPageRoute responsible for adaptive tansition such as zooms in, fades in or slide in etc. based on platform.
