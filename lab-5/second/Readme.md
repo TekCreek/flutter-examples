@@ -96,5 +96,5 @@ Now setup the ChangeNotifierProvider at a point where it will be available all t
 ```
 
 
-<img src="Provider.png" width=800 height=400/>
+<img src="Provider.png" width=1400 height=400/>
 
