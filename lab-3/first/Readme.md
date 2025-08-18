@@ -56,10 +56,10 @@ Below code is an example of a ListView it is always used in the vertical directi
                 body: ListView.builder(
                     itemCount: 50,
                     itemBuilder: (context, id) {
-                    return ListTile(
-                        leading: const Icon(Icons.add_box),
-                        title: Text("Item $id"),
-                    );
+                        return ListTile(
+                            leading: const Icon(Icons.add_box),
+                            title: Text("Item $id"),
+                        );
                     },
                 ),
             );
