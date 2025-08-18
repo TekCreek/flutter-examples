@@ -1,6 +1,6 @@
 # 5.b) Implement state management using set State and Provider.
 
-## Using Provider for capturing data changes.
+## Execution Steps
 
 ```
     flutter create lab_5b
@@ -25,8 +25,7 @@
 
 ## Notes - 
 
-Instead of using setState we are using the provider way, setState will be hard to maintain in cases 
-where change need to be propogated to multiple widgets in the hierarchy. 
+Instead of using setState we are using the provider way, setState will be hard to maintain in cases where change need to be propogated to multiple widgets in the hierarchy. 
 
 Provider uses Flutter’s ChangeNotifier to create a class that encapsulates the
 state and, when something changes, the interested widgets are notified and rebuilt.
@@ -55,8 +54,7 @@ something had changed and rebuild is required to reflect the change.
         }
 ```
 
-Now setup the ChangeNotifierProvider at a point where it will be available all the child widgets in 
-the hierarchy through Provider. 
+Now setup the ChangeNotifierProvider at a point where it will be available all the child widgets in the hierarchy through Provider. 
 
 ```dart
 
@@ -96,7 +94,5 @@ the hierarchy through Provider.
         }
  
 ```
-
-
 
 
