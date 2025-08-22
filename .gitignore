@@ -82,7 +82,6 @@ flutter/ephemeral/
 *.userosscache
 *.sln.docstates
 *.bkp
-*.drawio
 
 # Visual Studio build-related files.
 x64/
