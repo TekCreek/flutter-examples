@@ -1,14 +1,16 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const userRoutes = require('./routes/users');
-const postRoutes = require('./routes/posts');
-const auth = require('./middleware/auth');
-const cors = require('cors');
+import express from 'express';
+import pkg from 'body-parser';
+const { json } = pkg;
+
+import userRoutes from './routes/users.js';
+import postRoutes from './routes/posts.js';
+import auth from './middleware/auth.js';
+import cors from 'cors';
 
 const app = express();
 
 app.use(cors());
-app.use(bodyParser.json());
+app.use(json());
 
 // Auth middleware applied globally, but excluded for public paths
 app.use((req, res, next) => {

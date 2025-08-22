@@ -1,9 +1,12 @@
-const express = require('express');
-const router = express.Router();
-const db = require('../db');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-require('dotenv').config();
+import { Router } from 'express';
+const router = Router();
+import db from '../db.js';
+import { hash, compare } from 'bcryptjs';
+import pkg from 'jsonwebtoken';
+const { sign } = pkg;
+const { verify } = pkg;
+import dotenv from 'dotenv';
+dotenv.config();
 
 // Signup
 router.post('/signup', async (req, res) => {
@@ -12,7 +15,7 @@ router.post('/signup', async (req, res) => {
     const [users] = await db.execute('SELECT * FROM users WHERE username=?', [username]);
     if (users.length)
       return res.status(400).json({ message: 'Username already exists' });
-    const hashedPwd = await bcrypt.hash(password, 10);
+    const hashedPwd = await hash(password, 10);
     await db.execute(
       'INSERT INTO users (username, password, firstname, lastname) VALUES (?, ?, ?, ?)',
       [username, hashedPwd, firstname, lastname]
@@ -32,10 +35,10 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ message: 'Invalid credentials' });
 
     const user = users[0];
-    const match = await bcrypt.compare(password, user.password);
+    const match = await compare(password, user.password);
     if (!match) return res.status(401).json({ message: 'Invalid credentials' });
 
-    const token = jwt.sign(
+    const token = sign(
       { userId: user.userId, username: user.username },
       process.env.JWT_SECRET,
       { expiresIn: '1h' }
@@ -46,4 +49,4 @@ router.post('/login', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

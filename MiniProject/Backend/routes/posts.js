@@ -1,7 +1,7 @@
-const express = require('express');
-const router = express.Router();
-const db = require('../db');
-const auth = require('../middleware/auth');
+import { Router } from 'express';
+const router = Router();
+import db from '../db.js';
+import auth from '../middleware/auth.js';
 
 // Create Post
 router.post('/', auth, async (req, res) => {
@@ -78,4 +78,4 @@ router.delete('/:id', auth, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
