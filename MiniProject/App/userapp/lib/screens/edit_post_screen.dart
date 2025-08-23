@@ -1,3 +1,5 @@
+// ignore_for_file: sort_child_properties_last, use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import '../services/api_service.dart';
 import '../models/post.dart';
@@ -53,22 +55,39 @@ class _EditPostScreenState extends State<EditPostScreen> {
                 maxLines: 3,
               ),
               SizedBox(height: 20),
-              ElevatedButton(
-                child: loading ? CircularProgressIndicator() : Text('Update'),
-                onPressed: loading
-                    ? null
-                    : () async {
-                        if (_formKey.currentState!.validate()) {
-                          setState(() => loading = true);
-                          await ApiService().updatePost(
-                            post.postId,
-                            _titleController.text,
-                            _descriptionController.text,
-                          );
-                          setState(() => loading = false);
-                          Navigator.pop(context);
-                        }
-                      },
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 32.0,
+                    vertical: 8.0,
+                  ),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 32,
+                        vertical: 12,
+                      ),
+                      minimumSize: Size(0, 40),
+                    ),
+                    child: loading
+                        ? CircularProgressIndicator()
+                        : Text('Update'),
+                    onPressed: loading
+                        ? null
+                        : () async {
+                            if (_formKey.currentState!.validate()) {
+                              setState(() => loading = true);
+                              await ApiService().updatePost(
+                                post.postId,
+                                _titleController.text,
+                                _descriptionController.text,
+                              );
+                              setState(() => loading = false);
+                              if (mounted) Navigator.pop(context);
+                            }
+                          },
+                  ),
+                ),
               ),
             ],
           ),

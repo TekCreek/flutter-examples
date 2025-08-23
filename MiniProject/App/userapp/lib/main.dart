@@ -1,35 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'screens/login_screen.dart';
-import 'screens/signup_screen.dart';
-import 'screens/posts_screen.dart';
-import 'screens/create_post_screen.dart';
-import 'screens/edit_post_screen.dart';
+import 'package:userapp/routes/app_routes.dart';
+import 'package:userapp/services/auth_service.dart';
 
 // Global navigator key for 401 handling
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 Future<void> main() async {
   await dotenv.load(fileName: ".env");
-  runApp(MyApp());
+  String? token = await AuthService.getToken();
+  runApp(MyApp(initialRoute: token == null ? AppRoutes.login : AppRoutes.posts));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+  final String initialRoute;
+
+  const MyApp({super.key, required this.initialRoute});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Posts App',
       navigatorKey: navigatorKey,
-      initialRoute: '/login',
-      routes: {
-        '/login': (context) => LoginScreen(),
-        '/signup': (context) => SignupScreen(),
-        '/posts': (context) => PostsScreen(),
-        '/create_post': (context) => CreatePostScreen(),
-        '/edit_post': (context) => EditPostScreen(),
-      },
+      theme: ThemeData(
+        primarySwatch: Colors.lightBlue,
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.lightBlue),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      initialRoute: AppRoutes.login,
+      onGenerateRoute: AppRoutes.onGenerateRoute,
     );
   }
 }

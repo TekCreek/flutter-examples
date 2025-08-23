@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:userapp/routes/app_routes.dart';
 import '../services/api_service.dart';
 import '../models/post.dart';
 
 class PostsScreen extends StatefulWidget {
+  const PostsScreen({super.key});
+
   @override
   State<PostsScreen> createState() => _PostsScreenState();
 }
@@ -60,16 +63,23 @@ class _PostsScreenState extends State<PostsScreen> {
                       context,
                     ).showSnackBar(SnackBar(content: Text("Post deleted")));
                   },
-                  child: ListTile(
-                    title: Text(post.title),
-                    subtitle: Text(post.description),
-                    onTap: () {
-                      Navigator.pushNamed(
-                        context,
-                        '/edit_post',
-                        arguments: post,
-                      ).then((_) => fetchPosts());
-                    },
+                  child: Container(
+                    margin: EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                    decoration: BoxDecoration(
+                      color: Colors.blue[50],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: ListTile(
+                      title: Text(post.title),
+                      subtitle: Text(post.description),
+                      onTap: () {
+                        Navigator.pushNamed(
+                          context,
+                          AppRoutes.editPost,
+                          arguments: post,
+                        ).then((_) => fetchPosts());
+                      },
+                    ),
                   ),
                 );
               },
@@ -79,7 +89,7 @@ class _PostsScreenState extends State<PostsScreen> {
         onPressed: () {
           Navigator.pushNamed(
             context,
-            '/create_post',
+            AppRoutes.createPost,
           ).then((_) => fetchPosts());
         },
       ),

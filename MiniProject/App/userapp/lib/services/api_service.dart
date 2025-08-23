@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:userapp/routes/app_routes.dart';
 import '../models/post.dart';
 import '../main.dart'; // for navigatorKey
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -97,7 +98,7 @@ class ApiService {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.remove('token');
     navigatorKey.currentState?.pushNamedAndRemoveUntil(
-      '/login',
+      AppRoutes.login,
       (route) => false,
     );
   }
