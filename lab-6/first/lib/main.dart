@@ -74,6 +74,7 @@ class LaptopProductsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     int columns = (MediaQuery.of(context).size.width / 448).floor();
+    if (columns < 1) columns = 1;
     return Scaffold(
       appBar: AppBar(title: const Text("Laptops on Amazon.in")),
       body: GridView.builder(
