@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RawHttpRequestLogger Test</title>
-        <style>
-            .centered-form-container {
-                display: flex;
-                justify-content: left;
-                align-items: center;
-                margin-bottom: 20px;
-                /* min-height: 30vh; */
-            }
-            .centered-form {
-                border: 2px solid #333;
-                padding: 24px 32px;
-                border-radius: 8px;
-                background: #fafafa;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            }
-            .highlighted-info {
-                font: 1.5em sans-serif;
-                border-left: 4px solid #ffecb3;
-                padding: 8px 12px;
-                margin-bottom: 16px;
-            }
-        </style>
-    </head>
-    <body>
-        <div style="display: flex; justify-content: left; align-items: center; min-height: 10vh;">
-            <h1 style="margin: 0;">RawHttpRequestLogger Test</h1>
-        </div>
 
-        <div style="text-align: left; margin-bottom: 40px;">
-            <p class="highlighted-info"> Click <a href="http://localhost:3000/demo/index.html" target="_blank"> here (http://localhost:3000/demo/index.html) </a> to see the HTTP GET request sent to the server(check the server logs).</p>
-        </div>
+<head>
+    <title>RawHttpRequestLogger Test</title>
+    <style>
+        .centered-form-container {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 20px;
+            /* min-height: 30vh; */
+        }
 
-        <div style="text-align: left; margin-bottom: 40px;">
-            <p class="highlighted-info"> Click <a href="http://localhost:3000/demo/api/product?id=1" target="_blank"> here (http://localhost:3000/demo/api/product?id=1) </a> to see the HTTP GET request sent to the server(check the server logs).</p>
-        </div>
+        .centered-form {
+            border: 2px solid #333;
+            padding: 24px 32px;
+            border-radius: 8px;
+            background: #fafafa;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
 
-        <div class="centered-form-container">
-        <form class="centered-form" action="http://localhost:3000/submit">
-            <p class="highlighted-info"> Check the GET request with data in the server logs, data should be present in the headers </p>
+        .highlighted-info {
+            font: 1.5em sans-serif;
+            border-left: 4px solid #ffecb3;
+            padding: 8px 12px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: left; align-items: center; min-height: 10vh;">
+        <h1 style="margin: 0;">RawHttpRequestLogger Test</h1>
+    </div>
+
+    <div style="text-align: left; margin-bottom: 40px;">
+        <p class="highlighted-info"> Click <a href="http://localhost:3000/demo/index.html" target="_blank"> here
+                (http://localhost:3000/demo/index.html) </a> to see the HTTP GET request sent to the server(check the
+            server logs).</p>
+    </div>
+
+    <div style="text-align: left; margin-bottom: 40px;">
+        <p class="highlighted-info"> Click <a href="http://localhost:3000/demo/api/product?id=1" target="_blank"> here
+                (http://localhost:3000/demo/api/product?id=1) </a> to see the HTTP GET request sent to the server(check
+            the server logs).</p>
+    </div>
+
+    <div class="centered-form-container">
+        <form class="centered-form" action="http://localhost:3000/api/target">
+            <p class="highlighted-info"> Check the GET request with data in the server logs, data should be present in
+                the headers </p>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name"><br><br>
             <label for="address">Address:</label>
             <input type="text" id="address" name="address"><br><br>
-            <input type="submit" value="Submit">   
+            <input type="submit" value="Submit">
         </form>
-        </div>
+    </div>
 
-        <div class="centered-form-container">
-        <form class="centered-form" action="http://localhost:3000/submit" method="post">
+    <div class="centered-form-container">
+        <form class="centered-form" action="http://localhost:3000/api/target" method="post">
             <p class="highlighted-info">
                 Check the POST request in the server logs, data should be present in the body or payload
             </p>
@@ -60,11 +69,10 @@
             <input type="text" id="address" name="address"><br><br>
             <input type="submit" value="Submit">
         </form>
-        </div>
+    </div>
 
-        
-        <div class="centered-form-container">
-            <form class="centered-form" action="http://localhost:3000/submit" method="post" enctype="multipart/form-data">
+    <div class="centered-form-container">
+        <form class="centered-form" action="http://localhost:3000/api/target" method="post" enctype="multipart/form-data">
             <p class="highlighted-info">Check the MULTIPART request in the server log</p>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name"><br><br>
@@ -73,8 +81,9 @@
             <label for="file">Upload file:</label>
             <input type="file" id="file" name="file"><br><br>
             <input type="submit" value="Submit">
-            </form>
-        </div>
+        </form>
+    </div>
 
-    </body>
+</body>
+
 </html>

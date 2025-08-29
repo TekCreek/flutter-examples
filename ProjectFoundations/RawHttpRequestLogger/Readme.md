@@ -32,3 +32,6 @@ accept: */*
 ```
 
 Open [Test.html](Test.html) in your browser and try the different forms provided.
+
+
+Refer [SampleOutput.md](SampleOutput.md) file for sample HTTP Requests sent by the browser for various HTTP requests.
