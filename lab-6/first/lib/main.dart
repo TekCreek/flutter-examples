@@ -82,8 +82,7 @@ class LaptopProductsPage extends StatelessWidget {
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: columns,
           crossAxisSpacing: 8,
-          mainAxisSpacing: 8,
-          childAspectRatio: 2, // Adjust card height
+          mainAxisSpacing: 8
         ),
         itemCount: laptops.length,
         itemBuilder: (context, index) {
