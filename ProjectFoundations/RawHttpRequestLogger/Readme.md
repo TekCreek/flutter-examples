@@ -4,12 +4,13 @@ To run once call
 
 ```
     npm install
+    npm install nodemon -g
 ```
 
 then each time just the following command
 
 ```
-    node server.mjs
+    nodemon server.mjs
 ```
 
 Open another terminal and use the following curl command to send a HTTP request to this server 
