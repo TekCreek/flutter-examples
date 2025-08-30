@@ -14,4 +14,4 @@ Lab Experiment sequence -
 * Lab - 9
 * Lab - 10
 
-Note: Work in progress 
+Note: Consider only main.dart for lab experiments. Rest are for reference purposes.
