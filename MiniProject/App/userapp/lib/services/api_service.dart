@@ -23,6 +23,11 @@ class ApiService {
     return prefs.getString('token');
   }
 
+  void logout() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.remove('token');
+  }
+
   Future<List<Post>> fetchPosts() async {
     final String? token = await _getToken();
     final response = await client.get(

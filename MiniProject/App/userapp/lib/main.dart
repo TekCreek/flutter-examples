@@ -9,11 +9,12 @@ final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 Future<void> main() async {
   await dotenv.load(fileName: ".env");
   String? token = await AuthService.getToken();
-  runApp(MyApp(initialRoute: token == null ? AppRoutes.login : AppRoutes.posts));
+  runApp(
+    MyApp(initialRoute: token == null ? AppRoutes.login : AppRoutes.posts),
+  );
 }
 
 class MyApp extends StatelessWidget {
-
   final String initialRoute;
 
   const MyApp({super.key, required this.initialRoute});
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Posts App',
+      debugShowCheckedModeBanner: false,
       navigatorKey: navigatorKey,
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,

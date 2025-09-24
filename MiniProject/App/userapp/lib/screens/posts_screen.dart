@@ -38,10 +38,23 @@ class _PostsScreenState extends State<PostsScreen> {
     fetchPosts();
   }
 
+  void logout() async {
+    ApiService().logout();
+    if (mounted) {
+      Navigator.pushReplacementNamed(context, AppRoutes.login);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('My Posts')),
+      appBar: AppBar(
+        title: Text('My Posts'),
+        actions: [
+          IconButton(icon: Icon(Icons.refresh), onPressed: () => fetchPosts()),
+          IconButton(icon: Icon(Icons.logout), onPressed: logout),
+        ],
+      ),
       body: loading
           ? Center(child: CircularProgressIndicator())
           : ListView.builder(
