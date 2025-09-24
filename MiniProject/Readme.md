@@ -19,6 +19,8 @@ npm install
 
 * Launch the app using any of the followig options. 
 
+### NOTE: If you need to edit the mysql db host and password you can do that in the env file present in the Backend folder.
+
 ```sh
 node app.js
 
