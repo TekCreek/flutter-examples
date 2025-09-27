@@ -4,59 +4,71 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-1" value="Flutter App" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-12" value="* User API&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Signup&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Login&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;* Post API&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Create&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Retrieve&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Update&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Delete&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;font style=&quot;color: rgb(102, 0, 204);&quot;&gt;&amp;nbsp;*** Post API endpoints need a valid JWT token&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(102, 0, 204);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; in the HTTP Authentication Header&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=#CC0000;" parent="1" vertex="1">
+          <mxGeometry x="470" y="270" width="650" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-1" value="Flutter App" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;" parent="1" vertex="1">
           <mxGeometry x="140" y="180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-2" value="Express App" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-2" value="Express App" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;" parent="1" vertex="1">
           <mxGeometry x="480" y="180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-3" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;fillColor=default;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-3" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;fillColor=default;" parent="1" vertex="1">
           <mxGeometry x="770" y="170" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-4" value="MySQL" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-4" value="MySQL" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="770" y="120" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-5" value="Backend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-5" value="Backend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="480" y="115" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-6" value="API" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-6" value="API" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="420" y="195" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-7" value="Frontend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-7" value="Frontend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="140" y="130" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-8" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" edge="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-8" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="290" y="211" as="sourcePoint" />
             <mxPoint x="410" y="211" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-9" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" edge="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-9" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="630" y="209.5" as="sourcePoint" />
             <mxPoint x="750" y="209.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-10" value="React&lt;div&gt;Application&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-10" value="React&lt;div&gt;Application&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;" parent="1" vertex="1">
           <mxGeometry x="140" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" edge="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="300" y="360" as="sourcePoint" />
             <mxPoint x="430" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-12" value="* User API&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Signup&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Login&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;* Post API&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Create&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Retrieve&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Update&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - Delete&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;font style=&quot;color: rgb(102, 0, 204);&quot;&gt;&amp;nbsp;*** Post API endpoints need a valid JWT token&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(102, 0, 204);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; in the HTTP Authentication Header&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=#CC0000;" vertex="1" parent="1">
-          <mxGeometry x="470" y="270" width="650" height="350" as="geometry" />
-        </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-13" value="(Not implemented)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-13" value="(Not implemented)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="130" y="430" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-14" value="MiniProject/App/userapp" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=#6600CC;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-14" value="MiniProject/App/userapp" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=#6600CC;" parent="1" vertex="1">
           <mxGeometry x="35" y="50" width="330" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WFuYNh_20uDQ8d8Ay36U-15" value="MiniProject/Backend" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=#6600CC;" vertex="1" parent="1">
+        <mxCell id="WFuYNh_20uDQ8d8Ay36U-15" value="MiniProject/Backend" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=23;fontColor=#6600CC;" parent="1" vertex="1">
           <mxGeometry x="430" y="50" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QX6XruyX3VRJepeGVCHH-1" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="630" y="270" width="20" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="QX6XruyX3VRJepeGVCHH-2" value="Permitted&amp;nbsp;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 0, 0), rgb(255, 144, 144));&quot;&gt;full&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 0, 0), rgb(255, 144, 144));&quot;&gt;access with out token.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=22;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="645" y="285" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QX6XruyX3VRJepeGVCHH-3" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="670" y="425" width="20" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="QX6XruyX3VRJepeGVCHH-4" value="Require JWT token&amp;nbsp;&lt;div&gt;provided during login response&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=22;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="700" y="440" width="330" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
